@@ -5,13 +5,18 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      fontFamily: {
+        poppins: ['Quicksand', 'Poppins', 'system-ui'],
+      },
       colors: {
-        gray: colors.coolGray
-      }
+        lime: colors.lime,
+        green: colors.green,
+        gray: colors.gray,
+      },
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/aspect-ratio')],
 }
